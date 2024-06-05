@@ -13,8 +13,6 @@ import { AddNewTeacherComponent } from './components/add-new-teacher/add-new-tea
 import { AddNewStudentComponent } from './components/add-new-student/add-new-student.component';
 import { EditStudentComponent } from './components/edit-student/edit-student.component';
 import { EditTeacherComponent } from './components/edit-teacher/edit-teacher.component';
-import { AppServiceService } from './app-service.service';
-
 
 
 @NgModule({
@@ -26,7 +24,7 @@ import { AppServiceService } from './app-service.service';
     AddNewTeacherComponent,
     AddNewStudentComponent,
     EditStudentComponent,
-    EditTeacherComponent    
+    EditTeacherComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +33,7 @@ import { AppServiceService } from './app-service.service';
     FontAwesomeModule,
     FormsModule
   ],
-  providers: [AppServiceService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
