@@ -43,7 +43,7 @@ export class TeacherTableComponent implements OnInit {
   }
 
   getTeacherData() {
-    this.selected = 'Teachers';
+    this.selected = 'teacher';
     this.service.getTeacherData().subscribe((response) => {
       this.teacherData = Object.keys(response).map((key) => [response[key]]);
     }, (error) => {
